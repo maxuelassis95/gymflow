@@ -11,5 +11,5 @@ PHP Laravel | Mysql | Redis | Angular | Docker
 
 #### Desenvolvedor ####
 
-Maxuel Assis <maxuelassis95@gmail.com>
-Vinicius 
+**Maxuel Assis** <br> ***<maxuelassis95@gmail.com>*** <br>
+**Vinicius** <br> ***<email@vinicius.com>*** <br>  
