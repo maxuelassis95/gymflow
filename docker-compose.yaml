@@ -42,7 +42,7 @@ services:
     tty: true
     volumes:
       - setup-data:/var/lib/mysql/
-      - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
+      - ./Docker/mysql/my.cnf:/etc/mysql/my.cnf
     networks:
       - setup-network
     ports:
