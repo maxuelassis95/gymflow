@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Database\Eloquent\Casts\Json;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,18 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/teste', function() {
+    //mensagem_retorno();
+
+    return json_encode(mensagem_retorno("Ola mundo", 200));
+});
+
+function mensagem_retorno($cod, $msg) : array {
+    $mensagem = array([
+        'msg' => $msg,
+        'cod' => $cod,
+    ]);
+
+    return $mensagem;
+}
